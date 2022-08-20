@@ -54,13 +54,22 @@ public class LinkedList {
 				}
 			
 	}   
-	/*===============
 
 	public boolean delete(int index) {
-                //PUT YOUR CODE HERE
-                //PUT YOUR CODE HERE
+		LinkedList currentElem1 = this;
+		LinkedList currentElem2 = this.next;
+			for(int i = index; i >= 1;) {
+				currentElem1 = currentElem1.next;
+				currentElem2 = currentElem2.next;
+				if(i == 1) {
+					currentElem1.next = currentElem2.next;
+					return true;
+				}
+				return false;
+			}
+            return false;
 	}
-
+	/*===============
 	public int size() {
                 //PUT YOUR CODE HERE
                 //PUT YOUR CODE HERE
