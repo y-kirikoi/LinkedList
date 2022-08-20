@@ -68,8 +68,12 @@ public class LinkedList {
                 //PUT YOUR CODE HERE
 	}================*/
 }   
-      /*
-> Миша Гудзенко:
+    
+
+
+
+/*
+
 public class LinkedListRecurrent {
 
   private Integer data;
@@ -98,7 +102,4 @@ public class LinkedListRecurrent {
     }
   }
 }
-
-> Миша Гудзенко:
-Обрати внимание, какой короткий получился метод add
 */
