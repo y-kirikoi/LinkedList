@@ -44,37 +44,45 @@ public class LinkedList {
 
 	public Integer get(int index) {
 
-			if(0 != index) {
-				if(next!=null) {
+		if(0 != index) {
+			if(next!=null) {
 				return next.get(index-1);
-				}
+			}
 				return null;
-				} else {
-				return this.data;
-				}
+		} else {
+			return this.data;
+		}
 			
 	}   
 
 	public boolean delete(int index) {
-		LinkedList currentElem1 = this;
-		LinkedList currentElem2 = this.next;
+		LinkedList currentElem = this;
 			for(int i = index; i >= 1;) {
-				currentElem1 = currentElem1.next;
-				currentElem2 = currentElem2.next;
+				currentElem = currentElem.next;
 				if(i == 1) {
-					currentElem1.next = currentElem2.next;
+					this.next = this.next.next;
 					return true;
 				}
 				return false;
 			}
             return false;
 	}
-	/*===============
+
 	public int size() {
-                //PUT YOUR CODE HERE
-                //PUT YOUR CODE HERE
-	}================*/
-}   
+		if(this.data != null) {
+			LinkedList countElem = this;
+			int listSize = 1;
+				if(this.getNext()!=null) {
+					countElem = countElem.getNext();
+					return listSize++;
+				} else {
+					return listSize;
+				}
+		} else {
+           return 0;
+		}
+	}
+}
      
 
 
