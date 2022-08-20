@@ -53,9 +53,7 @@ public class LinkedList {
 				return this.data;
 				}
 			
-	}
-		
-                
+	}   
 	/*===============
 
 	public boolean delete(int index) {
@@ -68,8 +66,17 @@ public class LinkedList {
                 //PUT YOUR CODE HERE
 	}================*/
 }   
-      /*
-> Миша Гудзенко:
+     
+
+
+
+
+
+
+
+
+/*
+
 public class LinkedListRecurrent {
 
   private Integer data;
@@ -99,6 +106,4 @@ public class LinkedListRecurrent {
   }
 }
 
-> Миша Гудзенко:
-Обрати внимание, какой короткий получился метод add
 */

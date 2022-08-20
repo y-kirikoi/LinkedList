@@ -4,7 +4,7 @@ public class ListTest {
 
 	public static void main(String[] args) {
 		
-		Integer result = 22; //get(0);
+		Integer result = 22;
 		System.out.println(result);
 	}
 
