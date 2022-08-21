@@ -69,48 +69,18 @@ public class LinkedList {
 	}
 
 	public int size() {
-		if(this.data != null) {
-			LinkedList countElem = this;
-			int listSize = 1;
-				if(this.getNext()!=null) {
-					countElem = countElem.getNext();
-					return listSize++;
-				} else {
-					return listSize;
-				}
-		} else {
-           return 0;
-		}
+
+		LinkedList countElem = this;
+		int counter = 0;
+			while(countElem.next != null) {
+				countElem = countElem.next;
+				counter++;
+			}
+
+           return counter;
 	}
 }
-}   
-    
 
-
-
-
-/*
-
-public class LinkedListRecurrent {
-
-  private Integer data;
-  private LinkedListRecurrent next;
-
-  public LinkedListRecurrent() {
-  }
-
-  public LinkedListRecurrent(Integer data) {
-    this.data = data;
-  }
-  
-  public void setNext(LinkedListRecurrent next){
-    this.next = next;
-  }
-
-  public boolean isntLast(){
-    return next != null;
-  }
-  
   public void add(Integer data) {
     if (isntLast()){
       next.add(data);
@@ -118,7 +88,6 @@ public class LinkedListRecurrent {
       setNext(new LinkedListRecurrent(data));
     }
   }
+  
 }
-*/
-
 
