@@ -83,11 +83,8 @@ public class LinkedList {
 		}
 	}
 }
-     
-
-
-
-
+}   
+    
 
 
 
@@ -122,5 +119,6 @@ public class LinkedListRecurrent {
     }
   }
 }
-
 */
+
+
