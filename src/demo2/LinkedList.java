@@ -56,16 +56,17 @@ public class LinkedList {
 	}   
 
 	public boolean delete(int index) {
+		
 		LinkedList currentElem = this;
-			for(int i = index; i >= 1;) {
-				currentElem = currentElem.next;
+		
+		for(int i = index; i > 1; i--) {
+			currentElem = currentElem.next;
 				if(i == 1) {
 					this.next = this.next.next;
 					return true;
-				}
-				return false;
-			}
-            return false;
+				} 
+		}
+		return false;
 	}
 
 	public int size() {
