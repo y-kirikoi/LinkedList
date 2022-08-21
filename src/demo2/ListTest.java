@@ -15,7 +15,7 @@ public class ListTest {
 		System.out.println(chekLinkedList.get(2));
 		System.out.println(chekLinkedList.get(3)+"\n");
 		
-		System.out.println(chekLinkedList.get(133)+"\n");
+		System.out.println(chekLinkedList.get(133)+"\n"); //must be null
 		
 		System.out.println(chekLinkedList.size()+"\n"); // it must show list size 3
 		

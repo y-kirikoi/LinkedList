@@ -70,15 +70,12 @@ public class LinkedList {
 
 	public int size() {
 		LinkedList countElem = this;
-		if(this.data != null) {
-			int listSize = 1;
-				if(this.next!=null) {
-					countElem = countElem.next;
-					return listSize++;
-				} else {
-					return listSize;
-				}
-		} 
-           return 0;
+		int counter = 0;
+			while(countElem.next != null) {
+				countElem = countElem.next;
+				counter++;
+			}
+
+           return counter;
 	}
 }
