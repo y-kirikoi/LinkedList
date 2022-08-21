@@ -70,6 +70,7 @@ public class LinkedList {
 	}
 
 	public int size() {
+
 		LinkedList countElem = this;
 		int counter = 0;
 			while(countElem.next != null) {
@@ -80,3 +81,14 @@ public class LinkedList {
            return counter;
 	}
 }
+
+  public void add(Integer data) {
+    if (isntLast()){
+      next.add(data);
+    } else {
+      setNext(new LinkedListRecurrent(data));
+    }
+  }
+  
+}
+

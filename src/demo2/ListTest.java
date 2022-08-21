@@ -4,6 +4,7 @@ public class ListTest {
 
 	public static void main(String[] args) {
 		
+
 		LinkedList chekLinkedList = new LinkedList();
 		
 		chekLinkedList.add(28);
