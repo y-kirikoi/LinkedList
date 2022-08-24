@@ -81,7 +81,7 @@ public class LinkedList {
            return counter;
 	}
 }
-
+/*
   public void add(Integer data) {
     if (isntLast()){
       next.add(data);
@@ -91,4 +91,4 @@ public class LinkedList {
   }
   
 }
-
+*/
