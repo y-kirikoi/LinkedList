@@ -6,6 +6,7 @@ public class ListTest {
 		
 
 		LinkedList chekLinkedList = new LinkedList();
+
 		
 		chekLinkedList.add(28);
 		chekLinkedList.add(16);
@@ -19,6 +20,7 @@ public class ListTest {
 		System.out.println(chekLinkedList.get(3));
 		System.out.println(chekLinkedList.get(4)+"\n"); //it'll be null after deleting one of elems
 		System.out.println(chekLinkedList.size()); // it must show list size 3
+
 		
 	}
 

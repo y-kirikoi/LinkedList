@@ -67,7 +67,7 @@ public class LinkedList {
 				} 
 		}
 		return false;
-	}
+}
 
 	public int size() {
 
@@ -81,7 +81,9 @@ public class LinkedList {
            return counter;
 	}
 }
+
 /*
+
   public void add(Integer data) {
     if (isntLast()){
       next.add(data);
@@ -91,4 +93,6 @@ public class LinkedList {
   }
   
 }
+
 */
+
